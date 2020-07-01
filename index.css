@@ -14,8 +14,3 @@ html,body {
     height: 100%;
     background: #000;
 }
-
-#city {
-    position: absolute;
-    background: url('./img/city.png') no-repeat;
-}
