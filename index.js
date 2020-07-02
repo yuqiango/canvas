@@ -65,7 +65,7 @@ const rain = {
             e.y = e.y + speed + parseInt(Math.random() * 5);
             ctx.lineTo(e.x, e.y);
             ctx.stroke();
-            if (e.y > height - 100 || Math.sqrt((Math.pow(Math.abs(mousePos[0] - e.x), 2) + Math.pow(Math.abs(mousePos[1] - e.y), 2))) < radius) {
+            if (e.y > height - 10 || Math.sqrt((Math.pow(Math.abs(mousePos[0] - e.x), 2) + Math.pow(Math.abs(mousePos[1] - e.y), 2))) < radius) {
                 lineList.splice(index, 1);
                 rain.initDrop(e.x, e.y)
             }
